@@ -37,7 +37,7 @@
                         <a href="#">Notícias</a>
                     </li>
                     <li style="float:right;">
-                        <a href="#">Sobre Nós</a>
+                        <a href="#" onclick="document.getElementById('id01').style.display='block'">Sobre Nós</a>
                     </li>
                 </ul>
             </nav>
@@ -258,6 +258,88 @@
                         forma transparente o seu saldo em reais disponível para uso e um relatório mostrando os setores
                         sustentáveis que você apoiou com as suas movimentações financeiras.
                     </span>
+                </div>
+            </div>
+        </section>
+        <section name="modal-sobrenos">
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-contente w3-card-4 w3-animate-zomm">
+                    <header class="w3-content w3-lime">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-lime>w3-xlarge w3-display-topright">&times;</span>
+                        <h1>Sobre Nós</h1>
+                    </header>
+                    <div class="w3-bar w3-border-botton">
+                        <button class="tablink w3-bar-item w3-button" onclick="openAboutUs(event, 'historia')">
+                            Nossa Historia
+                        </button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openAboutUs(event, 'missão')">
+                            Missão e Valores
+                        </button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openAboutUs(event, 'tecnologia')">
+                            Tecnologia e Inovação
+                        </button>
+                    </div>
+                    <div id="historia" class="w3-content page">
+                        <h1>Nossa Historia</h1>
+                        <strong>De Matão para o mundo: A origem do Goodpay</strong>
+                        <p>
+                            O GoodPay não nasceu em uma sala de reuniões corporativa, mas sim dentro de um ambiente de
+                            educação e transformação: a Etec Sylvio de Matos Carvalho, na cidade de Matão. Somos um
+                            grupo de alunos do curso Técnico de Informática que decidiu que a tecnologia não deve servir
+                            apenas para criar sistemas, mas para transformar realidades.
+                        </p>
+                        <p>
+                            Sob a mentoria e orientação do Professor Victor, o projeto saiu do papel como uma iniciativa
+                            de empreendedorismo social. Unindo uma sólida base pedagógica com o desejo de gerar impacto
+                            positivo, percebemos que poderíamos usar o conhecimento adquirido em sala de aula para
+                            desenvolver uma solução real para problemas sociais. O GoodPay é o resultado prático dessa
+                            jornada: um ecossistema construído por estudantes da rede pública, focado em inovação
+                            tecnológica responsável e cidadania.
+                        </p>
+                    </div>
+                    <div id="missão" class="w3-content page">
+                        <h1>Missão e Valores</h1>
+                        <strong>Tecnologia com propósito humano</strong>
+                        <p>Nosso motor é a crença de que a tecnologia de ponta deve ser acessível e voltada para o bem
+                            comum. No GoodPay, trabalhamos para construir pontes em vez de muros.
+                        </p>
+                        <p>
+                            Nossa Missão:<br>
+                            Desenvolver soluções tecnológicas seguras, acessíveis e eficientes que
+                            promovam a inclusão e o desenvolvimento social, provando que a inovação aliada à educação
+                            pode transformar comunidades.<br>
+                            Nossa Visão: <br>
+                            Ser referência em empreendedorismo social no setor de tecnologia, demonstrando
+                            o potencial e a excelência técnica dos alunos formados pelo ensino público técnico.<br>
+                            Nossos Valores:<br>
+                            Impacto Social:Colocamos as pessoas e a sociedade no centro de cada linha de código.<br>
+                            Inovação Responsável: Buscamos soluções modernas que sejam éticas e sustentáveis.<br>
+                            Colaboração: Acreditamos no poder do trabalho em equipe e no compartilhamento do
+                            conhecimento.<br>
+                            Excelência Técnica: Rigor e qualidade em tudo o que desenvolvemos.<br>
+
+                        </p>
+                    </div>
+                    <div id="tecnologia" class="w3-content page">
+                        <h1>Tecnologia e Inovação</h1>
+                        <strong>Arquitetura de ponta para impacto real</strong>
+                        <p>
+                            Para que um projeto de empreendedorismo social alcance seu verdadeiro potencial, ele precisa
+                            de uma infraestrutura robusta, segura e escalável. É por isso que o GoodPay foi arquitetado
+                            utilizando as melhores e mais modernas ferramentas do mercado.
+                        </p>
+                        <p> 
+                            Nossa plataforma é impulsionada pelo ecossistema do Google: <br>
+                            <i> Google Cloud Platform (GCP):</i>Garantimos alta disponibilidade, segurança de dados e
+                            capacidade de processamento em nuvem. O GCP nos permite escalar o GoodPay de forma
+                            sustentável, garantindo que a plataforma cresça junto com o nosso impacto <br>
+                            <i> Firebase:</i> Utilizamos o Firebase para gerenciar dados em tempo real, autenticação segura de
+                            usuários e integração ágil. Essa escolha tecnológica nos permite focar no que realmente
+                            importa: a experiência do usuário e a entrega de valor, mantendo o sistema rápido e
+                            confiável.<br>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
